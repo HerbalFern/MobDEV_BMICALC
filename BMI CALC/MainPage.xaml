@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMI_CALC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="bmipic.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+            <Label
+                Text="BMI CALCULATOR"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            
+            <Entry 
+                x:Name="gettingWeight"
+                Placeholder="Enter Weight"
+                Keyboard="Text"
+                />
+            
+            <Entry 
+                x:Name="gettingHeight"
+                Placeholder="Enter Height"
+                Keyboard="Text"
+            />
+            
+            <Button
+                x:Name="BMIButton"                  
+                Text="Check BMI"
+                Clicked="BMICalc"
+                HorizontalOptions="Fill"
+                
+                />
+                
+            <Label x:Name="Result"
+                   HorizontalOptions="Center"
+                   />
+            
+            <Label x:Name="Status"
+                   HorizontalOptions="Center"
+                   />
+
+            <!-- 
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            -->
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
