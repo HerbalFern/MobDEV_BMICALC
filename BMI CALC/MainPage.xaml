@@ -21,13 +21,13 @@
             
             <Entry 
                 x:Name="gettingWeight"
-                Placeholder="Enter Weight"
+                Placeholder="Enter Weight (KG)"
                 Keyboard="Text"
                 />
             
             <Entry 
                 x:Name="gettingHeight"
-                Placeholder="Enter Height"
+                Placeholder="Enter Height (CM)"
                 Keyboard="Text"
             />
             
